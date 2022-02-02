@@ -1,3 +1,14 @@
+/*
+Crie uma hierarquia de classes conforme abaixo com os seguintes atributos e
+comportamentos (observe a tabela), utilize os seus conhecimentos e distribua as
+características de forma que tudo o que for comum a todos os animais fique na classe
+Animal.
+
+Implemente um programa que crie os 3 tipos de animais definidos no exercício
+anterior e invoque o método que emite o som de cada um de forma polimórfica, isto
+é, independente do tipo de animal.
+*/
+
 package herancaEPolimorfismo.Exercicio1;
 
 import java.util.Scanner;
@@ -23,7 +34,9 @@ public class Console {
 
         System.out.println("\nNome: " + dog.getNome());
         System.out.println("Idade: " + dog.getIdade());
+        dog.emitirSom();
         dog.brincar();
+        dog.correr();
         System.out.println("\n");
 
         // Gato
@@ -36,7 +49,9 @@ public class Console {
 
         System.out.println("\nNome: " +  gato.getNome());
         System.out.println("Idade: " +  gato.getIdade());
+        gato.emitirSom();
         gato.arranhar();
+        gato.correr();
         System.out.println("\n");
 
         // Preguica
@@ -49,6 +64,7 @@ public class Console {
 
         System.out.println("\nNome: " +  preguica.getNome());
         System.out.println("Idade: " +  preguica.getIdade());
+        preguica.emitirSom();
         preguica.subirArvores();
         System.out.println("\n");
 
